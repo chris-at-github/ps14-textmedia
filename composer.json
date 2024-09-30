@@ -1,0 +1,32 @@
+{
+	"name": "ps14/textmedia",
+	"type": "typo3-cms-extension",
+	"description": "TYPO3 Extension to extend the basic TYPO3 textmedia module",
+	"keywords": [
+		"TYPO3",
+		"extension"
+	],
+	"homepage": "http://ps14.de/",
+	"require": {
+		"typo3/cms-core": "^12.4"
+	},
+	"suggest": {
+	},
+	"autoload": {
+		"psr-4": {
+			"Ps14\\Textmedia\\": "Classes"
+		}
+	},
+	"license": "closed",
+	"authors": [
+		{
+			"name": "Christian Pschorr",
+			"email": "pschorr.christian@gmail.com"
+		}
+	],
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "ps14_textmedia"
+		}
+	}
+}
