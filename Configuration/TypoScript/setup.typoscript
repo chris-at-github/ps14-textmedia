@@ -20,7 +20,14 @@ tt_content {
 			40 = EXT:ps14_site/Resources/Private/Partials/
 		}
 
-#		dataProcessing {
+		dataProcessing {
+			140 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+			140 {
+				if.isTrue.field = assets
+
+				as = media
+				references.fieldName = assets
+			}
 #			200 = Ps14\Textmedia\DataProcessing\ModuleProcessor
 #			200 {
 #				importCss {
@@ -31,60 +38,42 @@ tt_content {
 #					10 = /assets/js/modules/textmedia.js
 #				}
 #			}
-#		}
+		}
 	}
 }
 
 // ---------------------------------------------------------------------------------------------------------------------
 // Settings
-#plugin.tx_ps14textmedia {
-#	settings {
-#		images {
-#			main {
-#				maxWidth = 1200
-#				cropVariant = desktop
-#
-#				mediaQueries {
-#					0 {
-#						maxWidth = 1200
-#						cropVariant = desktop
-#						mediaQuery = (min-width: 992px)
-#					}
-#					1 {
-#						maxWidth = 992
-#						cropVariant = desktop
-#						mediaQuery = (min-width: 768px)
-#					}
-#					2 {
-#						maxWidth = 768
-#						cropVariant = mobile
-#						mediaQuery = (min-width: 576px)
-#					}
-#					3 {
-#						maxWidth = 576
-#						cropVariant = mobile
-#						mediaQuery = (min-width: 0px)
-#					}
-#				}
-#			}
-#
-#			element {
-#				maxWidth = 480
-#				cropVariant = default
-#
-#				mediaQueries {
-#					1 {
-#						maxWidth = 480
-#						cropVariant = default
-#						mediaQuery = (min-width: 768px)
-#					}
-#					3 {
-#						maxWidth = 320
-#						cropVariant = default
-#						mediaQuery = (min-width: 0px)
-#					}
-#				}
-#			}
-#		}
-#	}
-#}
+plugin.tx_ps14textmedia {
+	settings {
+		images {
+			preview {
+				maxWidth = 1200
+				cropVariant = default
+
+				mediaQueries {
+					0 {
+						maxWidth = 1200
+						cropVariant = default
+						mediaQuery = (min-width: 992px)
+					}
+					1 {
+						maxWidth = 992
+						cropVariant = default
+						mediaQuery = (min-width: 768px)
+					}
+					2 {
+						maxWidth = 768
+						cropVariant = default
+						mediaQuery = (min-width: 576px)
+					}
+					3 {
+						maxWidth = 576
+						cropVariant = default
+						mediaQuery = (min-width: 0px)
+					}
+				}
+			}
+		}
+	}
+}

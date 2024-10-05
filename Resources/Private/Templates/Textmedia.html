@@ -2,6 +2,7 @@
 	<f:layout name="Default" />
 	<f:section name="Main">
 		<f:render partial="Textmedia/Layout/{data.tx_foundation_variant -> fo:format.pascalCase()}" optional="1" arguments="{_all}">
+			<f:render section="Media" arguments="{_all}" />
 			<f:render section="Bodytext" arguments="{_all}" />
 		</f:render>
 	</f:section>
@@ -9,6 +10,25 @@
 	<f:section name="Bodytext">
 		<f:if condition="{data.bodytext}">
 			<f:render partial="Content/Bodytext" arguments="{bodytext: data.bodytext}" />
+		</f:if>
+	</f:section>
+
+	<f:section name="Media">
+		<f:if condition="{media.0}">
+			<div class="media-container media-container--video">
+				<f:render partial="Media/Rendering/Video" section="Main" arguments="{
+					media: media.0,
+					options: {
+						autoplay: media.0.properties.autoplay,
+						controls: media.0.properties.tx_textmedia_controls,
+						loop: media.0.properties.tx_textmedia_loop
+					},
+					preview: {
+						image: images.0,
+						settings: '{fo:settings.get(extension: \'Ps14Textmedia\', path: \'images.preview\')}'
+					}
+				}" />
+			</div>
 		</f:if>
 	</f:section>
 </html>
