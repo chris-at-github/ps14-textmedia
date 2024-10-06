@@ -10,7 +10,7 @@ TYPO3 Extension um das TYPO3 Basis Textmedia Modul zu erweitern.
 - [ ] Erstellung neues Feld für Medien-Vorschaubild in Entity-Tabelle
 - [ ] Einbindung Partial in Produktdatenbank
 - [ ] Testen der Übersetzung
-- [ ] Sprach-Snippet für Play-Button anpassen
+- [x] Sprach-Snippet für Play-Button anpassen
 - [ ] Layout für verbereitete Ansicht aus Hero übernehmen
 - [ ] Hero-Modul bereinigen
 - [ ] Auswertung Ausrichtung
