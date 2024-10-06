@@ -11,6 +11,6 @@ TYPO3 Extension um das TYPO3 Basis Textmedia Modul zu erweitern.
 - [ ] Einbindung Partial in Produktdatenbank
 - [ ] Testen der Übersetzung
 - [x] Sprach-Snippet für Play-Button anpassen
-- [ ] Layout für verbereitete Ansicht aus Hero übernehmen
+- [x] Layout für verbereitete Ansicht aus Hero übernehmen
 - [ ] Hero-Modul bereinigen
 - [ ] Auswertung Ausrichtung
