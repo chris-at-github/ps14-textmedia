@@ -8,9 +8,9 @@ TYPO3 Extension um das TYPO3 Basis Textmedia Modul zu erweitern.
 - [x] Einbinung Vorschaubild im Frontend
 - [x] Auslagerung Frontend Darstellung in Partial
 - [ ] Erstellung neues Feld für Medien-Vorschaubild in Entity-Tabelle
-- [ ] Einbindung Partial in Produktdatenbank
+- [x] Einbindung Partial in Produktdatenbank
 - [ ] Testen der Übersetzung
 - [x] Sprach-Snippet für Play-Button anpassen
 - [x] Layout für verbereitete Ansicht aus Hero übernehmen
-- [ ] Hero-Modul bereinigen
+- [x] Hero-Modul bereinigen
 - [ ] Auswertung Ausrichtung
