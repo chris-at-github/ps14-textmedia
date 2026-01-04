@@ -1,26 +1,26 @@
-mod.wizards.newContentElement.wizardItems {
-	common {
-		elements {
-			ps14_images {
-				iconIdentifier = ps14-module-images
-				title = LLL:EXT:ps14_images/Resources/Private/Language/locallang_tca.xlf:title
-				description = LLL:EXT:ps14_images/Resources/Private/Language/locallang_tca.xlf:description
-				tt_content_defValues {
-					CType = ps14_images
-				}
-			}
-		}
+#mod.wizards.newContentElement.wizardItems {
+#	common {
+#		elements {
+#			ps14_images {
+#				iconIdentifier = ps14-module-images
+#				title = LLL:EXT:ps14_images/Resources/Private/Language/locallang_tca.xlf:title
+#				description = LLL:EXT:ps14_images/Resources/Private/Language/locallang_tca.xlf:description
+#				tt_content_defValues {
+#					CType = ps14_images
+#				}
+#			}
+#		}
+#
+#		show := addToList(ps14_images)
+#	}
+#}
 
-		show := addToList(ps14_images)
-	}
-}
-
-[field('CType') === 'ps14_images']
-	TCEFORM.tt_content {
-		tx_foundation_variant {
-			addItems {
-				gallery = LLL:EXT:ps14_images/Resources/Private/Language/locallang_tca.xlf:content.variant.gallery
-			}
-		}
-	}
-[END]
+#[field('CType') === 'ps14_image']
+#	TCEFORM.tt_content {
+#		tx_foundation_variant {
+#			addItems {
+#				gallery = LLL:EXT:ps14_images/Resources/Private/Language/locallang_tca.xlf:content.variant.gallery
+#			}
+#		}
+#	}
+#[END]

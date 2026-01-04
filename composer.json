@@ -1,5 +1,5 @@
 {
-	"name": "ps14/images",
+	"name": "ps14/image",
 	"type": "typo3-cms-extension",
 	"description": "Module to extend the TYPO3 Core image module",
 	"keywords": [
@@ -8,13 +8,13 @@
 	],
 	"homepage": "http://ps14.de/",
 	"require": {
-		"typo3/cms-core": "^12.4"
+		"typo3/cms-core": "^13.4"
 	},
 	"suggest": {
 	},
 	"autoload": {
 		"psr-4": {
-			"Ps14\\Images\\": "Classes"
+			"Ps14\\Image\\": "Classes"
 		}
 	},
 	"license": "closed",
@@ -26,7 +26,7 @@
 	],
 	"extra": {
 		"typo3/cms": {
-			"extension-key": "ps14_images"
+			"extension-key": "ps14_image"
 		}
 	}
 }

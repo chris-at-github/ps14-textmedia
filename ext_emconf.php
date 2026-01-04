@@ -1,7 +1,7 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = [
-	'title' => 'Ps14 Images',
+	'title' => 'Ps14 Image',
 	'description' => 'Module to extend the TYPO3 Core image module',
 	'category' => 'distribution',
 	'author' => 'Christian Pschorr',
@@ -10,11 +10,11 @@ $EM_CONF[$_EXTKEY] = [
 	'state' => 'beta',
 	'uploadfolder' => 0,
 	'clearCacheOnLoad' => 0,
-	'version' => '1.0.0',
+	'version' => '13.0.0',
 	'constraints' => [
 		'depends' => [
-			'typo3' => '12.0.0-12.4.99',
-			'ps14_foundation' => '2.0.0-2.9.99',
+			'typo3' => '13.0.0-13.4.99',
+			'ps14_foundation' => '13.0.0-13.9.99',
 		],
 		'conflicts' => [],
 		'suggests' => [],
