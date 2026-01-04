@@ -1,5 +1,5 @@
 {
-	"name": "ps14/image",
+	"name": "ps14/ps14_image",
 	"type": "typo3-cms-extension",
 	"description": "Module to extend the TYPO3 Core image module",
 	"keywords": [
