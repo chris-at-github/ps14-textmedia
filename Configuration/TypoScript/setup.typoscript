@@ -1,40 +1,24 @@
 // ---------------------------------------------------------------------------------------------------------------------
 // tt_content Definition
-#tt_content {
-#	ps14_images =< lib.contentElement
-#	ps14_images {
-#		templateName = Images.html
-#		layoutRootPaths {
-#			10 = EXT:ps14_images/Resources/Private/Layouts/
-#			20 = EXT:ps14_site/Resources/Private/Extensions/Images/Layouts/
-#		}
-#
-#		templateRootPaths {
-#			10 = EXT:ps14_images/Resources/Private/Templates/
-#			20 = EXT:ps14_site/Resources/Private/Extensions/Images/Templates/
-#		}
-#
-#		partialRootPaths {
-#			10 = EXT:ps14_images/Resources/Private/Partials/
-#			20 = EXT:ps14_site/Resources/Private/Extensions/Images/Partials/
-#			30 = EXT:ps14_foundation/Resources/Private/Partials/
-#			40 = EXT:ps14_site/Resources/Private/Partials/
-#		}
-#
-#		dataProcessing {
-#			200 = Ps14\Foundation\DataProcessing\ModuleProcessor
-#			200 {
-#				importCss {
-#					10 = /assets/css/modules/images.css
-#				}
-#
-##				importJs {
-##					10 = /assets/js/modules/images.js
-##				}
-#			}
-#		}
-#	}
-#}
+tt_content {
+	image =< lib.contentElement
+	image {
+		layoutRootPaths {
+			200 = EXT:ps14_image/Resources/Private/Layouts/
+			210 = EXT:ps14_site/Resources/Private/Extensions/Image/Layouts/
+		}
+
+		templateRootPaths {
+			200 = EXT:ps14_image/Resources/Private/Templates/
+			210 = EXT:ps14_site/Resources/Private/Extensions/Image/Templates/
+		}
+
+		partialRootPaths {
+			200 = EXT:ps14_image/Resources/Private/Partials/
+			210 = EXT:ps14_site/Resources/Private/Extensions/Image/Partials/
+		}
+	}
+}
 
 #// ---------------------------------------------------------------------------------------------------------------------
 #// Settings
