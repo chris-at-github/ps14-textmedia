@@ -4,8 +4,8 @@ Erweitert das Standard TYPO3 Image Modul um neue Ansichten und Funktionen.
 ## Todos
 - [ ] Implementierung Standardansicht
   - [x] Erweiterung Templatepfade
-  - [ ] Auswertung der Dimensionen aus dem Backend im Frontend
-  - [ ] Auswertung Cropvarianten im Frontend
+  - [x] Auswertung der Dimensionen aus dem Backend im Frontend
+  - [x] Auswertung Cropvarianten im Frontend
   - [ ] Hinzufügen der Ausrichtung (links, zentriert, rechts)
 - [ ] Neues Feld (in Foundation) für die Priorität (CLS Optimierung) hinzufügen
 - [ ] Neues Feld Ratio hinzufügen
