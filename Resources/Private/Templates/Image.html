@@ -1,10 +1,39 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:fo="http://typo3.org/ns/Ps14/Foundation/ViewHelpers" data-namespace-typo3-fluid="true">
+<html
+	xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	xmlns:fo="http://typo3.org/ns/Ps14/Foundation/ViewHelpers"
+	data-namespace-typo3-fluid="true">
 	<f:layout name="Default" />
+
 	<f:section name="Main">
+		<f:if condition="{gallery.count.rows} == 1 && {gallery.count.columns} == 1">
+			<f:render partial="Layout/Single" section="Main" arguments="{_all}" />
+		</f:if>
+	</f:section>
+
+	<f:section name="BackupRows">
+		<f:for each="{gallery.rows}" as="row">
+			<f:for each="{row.columns}" as="column">
+				<f:if condition="{column.media}">
+					<f:render partial="Media/Main" section="Main" arguments="{
+						file: column.media,
+						maxWidth: column.dimensions.width,
+						maxHeight: column.dimensions.height,
+						cssClass: 'media-container--horizontal-{gallery.position.horizontal} media-container--vertical-{gallery.position.vertical}',
+						settings: '{fo:settings.get(extension: \'Ps14Foundation\', plugin: \'image\', path: \'image\')}'
+					}" />
+				</f:if>
+			</f:for>
+		</f:for>
+	</f:section>
+
+	<f:section name="Backup">
+		<f:debug>{_all}</f:debug>
+		<f:comment>
 		<f:render partial="Images/Layout/{data.tx_foundation_variant -> fo:format.pascalCase()}" section="Main" optional="1" arguments="{_all}">
 			<f:render section="Bodytext" arguments="{_all}" />
 			<f:render section="Images" arguments="{_all}" />
 		</f:render>
+		</f:comment>
 	</f:section>
 
 	<f:section name="Bodytext">
