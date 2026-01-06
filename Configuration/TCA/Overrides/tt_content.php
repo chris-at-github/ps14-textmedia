@@ -34,18 +34,58 @@
 //];
 
 //$GLOBALS['TCA']['tt_content']['types']['ps14_images']['columnsOverrides']['imageorient']['onChange'] = 'reload';
-//$GLOBALS['TCA']['tt_content']['types']['ps14_images']['columnsOverrides']['imageorient']['config']['items'] = [
-//	[
-//		'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:imageorient.I.0',
-//		'value' => 0,
-//		'icon' => 'content-beside-text-img-above-center',
-//	],
-//	[
-//		'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:imageorient.I.3',
-//		'value' => 8,
-//		'icon' => 'content-beside-text-img-below-center',
-//	],
-//];
+$GLOBALS['TCA']['tt_content']['types']['image']['columnsOverrides']['imageorient']['config']['items'] = [
+    [
+        'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:imageorient.I.0',
+        'value' => 0,
+        'icon' => 'content-beside-text-img-above-center',
+    ],
+    [
+        'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:imageorient.I.1',
+        'value' => 1,
+        'icon' => 'content-beside-text-img-above-right',
+    ],
+    [
+        'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:imageorient.I.2',
+        'value' => 2,
+        'icon' => 'content-beside-text-img-above-left',
+    ],
+//    [
+//        'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:imageorient.I.3',
+//        'value' => 8,
+//        'icon' => 'content-beside-text-img-below-center',
+//    ],
+//    [
+//        'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:imageorient.I.4',
+//        'value' => 9,
+//        'icon' => 'content-beside-text-img-below-right',
+//    ],
+//    [
+//        'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:imageorient.I.5',
+//        'value' => 10,
+//        'icon' => 'content-beside-text-img-below-left',
+//    ],
+//    [
+//        'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:imageorient.I.6',
+//        'value' => 17,
+//        'icon' => 'content-inside-text-img-right',
+//    ],
+//    [
+//        'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:imageorient.I.7',
+//        'value' => 18,
+//        'icon' => 'content-inside-text-img-left',
+//    ],
+//    [
+//        'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:imageorient.I.9',
+//        'value' => 25,
+//        'icon' => 'content-beside-text-img-right',
+//    ],
+//    [
+//        'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:imageorient.I.10',
+//        'value' => 26,
+//        'icon' => 'content-beside-text-img-left',
+//    ],
+];
 
 // Crop-Varianten fuer Image-Feld
 //$GLOBALS['TCA']['tt_content']['types']['ps14_images']['columnsOverrides']['image']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants'] = \Ps14\Site\Service\TcaService::getCropVariants(
