@@ -1,7 +1,7 @@
 {
-	"name": "ps14/ps14_image",
+	"name": "ps14/ps14_textmedia",
 	"type": "typo3-cms-extension",
-	"description": "Module to extend the TYPO3 Core image module",
+	"description": "Module to extend the TYPO3 Core image and textpic module",
 	"keywords": [
 		"TYPO3",
 		"extension"
@@ -14,7 +14,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Ps14\\Image\\": "Classes"
+			"Ps14\\Textmedia\\": "Classes"
 		}
 	},
 	"license": "closed",
@@ -26,7 +26,7 @@
 	],
 	"extra": {
 		"typo3/cms": {
-			"extension-key": "ps14_image"
+			"extension-key": "ps14_textmedia"
 		}
 	}
 }

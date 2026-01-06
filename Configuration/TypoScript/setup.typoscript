@@ -4,18 +4,18 @@ tt_content {
 	image =< lib.contentElement
 	image {
 		layoutRootPaths {
-			200 = EXT:ps14_image/Resources/Private/Layouts/
-			210 = EXT:ps14_site/Resources/Private/Extensions/Image/Layouts/
+			200 = EXT:ps14_textmedia/Resources/Private/Layouts/
+			210 = EXT:ps14_site/Resources/Private/Extensions/Textmedia/Layouts/
 		}
 
 		templateRootPaths {
-			200 = EXT:ps14_image/Resources/Private/Templates/
-			210 = EXT:ps14_site/Resources/Private/Extensions/Image/Templates/
+			200 = EXT:ps14_textmedia/Resources/Private/Templates/
+			210 = EXT:ps14_site/Resources/Private/Extensions/Textmedia/Templates/
 		}
 
 		partialRootPaths {
-			200 = EXT:ps14_image/Resources/Private/Partials/
-			210 = EXT:ps14_site/Resources/Private/Extensions/Image/Partials/
+			200 = EXT:ps14_textmedia/Resources/Private/Partials/
+			210 = EXT:ps14_site/Resources/Private/Extensions/Textmedia/Partials/
 		}
 	}
 }

@@ -1,8 +1,8 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = [
-	'title' => 'Ps14 Image',
-	'description' => 'Module to extend the TYPO3 Core image module',
+	'title' => 'Ps14 Textmedia',
+	'description' => 'Module to extend the TYPO3 Core image and textpic module',
 	'category' => 'distribution',
 	'author' => 'Christian Pschorr',
 	'author_email' => 'pschorr.christian@gmail.com',
