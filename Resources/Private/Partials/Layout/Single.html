@@ -7,7 +7,7 @@
         <f:if condition="{column.media}">
           <div class="media-group media-group--single media-group--horizontal-{gallery.position.horizontal} media-group--vertical-{gallery.position.vertical}">
             <f:render partial="Item/Main" arguments="{
-              record: data,
+              content: data,
               file: column.media,
               width: column.dimensions.width,
               height: column.dimensions.height,

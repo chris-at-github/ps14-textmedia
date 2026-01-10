@@ -4,5 +4,16 @@
   xmlns:co="http://typo3.org/ns/Ps14/Site/Component/ComponentCollection"
   data-namespace-typo3-fluid="true">
 
-  <co:media.container media="{file}" width="{width}" priority="{renderingPriority}" ratio="{ratio}" />
+  <f:if condition="{content.tx_foundation_no_caption}">
+    <f:then>
+      <f:variable name="description" value="{false}" />
+      <f:variable name="copyright" value="{false}" />
+    </f:then>
+    <f:else>
+      <f:variable name="description" value="{true}" />
+      <f:variable name="copyright" value="{true}" />
+    </f:else>
+  </f:if>
+
+  <co:media.container media="{file}" width="{width}" priority="{renderingPriority}" ratio="{ratio}" description="{description}" copyright="{copyright}" />
 </html>
