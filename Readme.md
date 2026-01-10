@@ -11,7 +11,10 @@ Erweitert das Standard TYPO3 Image Modul um neue Ansichten und Funktionen.
   - [x] Neues Feld im TCA hinzufügen (auto, high, low)
   - [x] Auswertung im Frontend über ViewHelper
   - [x] Counter über aktuellen Modulindex implementieren (Auslagerung in Service Singleton)
-- [ ] Neues Feld Ratio hinzufügen
+- [x] Neues Feld Ratio hinzufügen
+  - [x] Feld im TCA hinzufügen (1:1, 4:3, 16:9, original)
+  - [x] Übersetzung der Werte
+  - [x] Auswertung im Frontend
 - [ ] Neues Feld für Ausblenden der Copyright und Description hinzufügen
 - [ ] Felder für Rows und Columns hinzufügen (TYPO3 Standard)
   - [ ] Backend Optimierung
