@@ -33,7 +33,10 @@
 //	'richtextConfiguration' => 'ps14Default',
 //];
 
+
+
 //$GLOBALS['TCA']['tt_content']['types']['ps14_images']['columnsOverrides']['imageorient']['onChange'] = 'reload';
+$GLOBALS['TCA']['tt_content']['types']['image']['columnsOverrides']['imageorient']['config']['default'] = 0;
 $GLOBALS['TCA']['tt_content']['types']['image']['columnsOverrides']['imageorient']['config']['items'] = [
     [
         'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:imageorient.I.0',

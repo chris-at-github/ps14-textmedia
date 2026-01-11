@@ -1,0 +1,22 @@
+<div xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+     xmlns:fo="http://typo3.org/ns/Ps14/Foundation/ViewHelpers"
+     data-namespace-typo3-fluid="true">
+  <f:section name="Main">
+    <div class="media-group media-group--column-{gallery.count.columns} media-group--horizontal-{gallery.position.horizontal} media-group--vertical-{gallery.position.vertical}">
+      <f:for each="{gallery.rows}" as="row">
+        <f:for each="{row.columns}" as="column">
+          <f:if condition="{column.media}">
+            <f:render partial="Item/Main" arguments="{
+              content: data,
+              file: column.media,
+              width: column.dimensions.width,
+              height: column.dimensions.height,
+              renderingPriority: '{fo:renderingPriority(uid: data.uid)}',
+              ratio: data.tx_foundation_ratio
+            }"/>
+          </f:if>
+        </f:for>
+      </f:for>
+    </div>
+  </f:section>
+</div>

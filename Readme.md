@@ -15,8 +15,10 @@ Erweitert das Standard TYPO3 Image Modul um neue Ansichten und Funktionen.
   - [x] Feld im TCA hinzufügen (1:1, 4:3, 16:9, original)
   - [x] Übersetzung der Werte
   - [x] Auswertung im Frontend
-- [ ] Neues Feld für Ausblenden der Copyright und Description hinzufügen
-- [ ] Felder für Rows und Columns hinzufügen (TYPO3 Standard)
+- [x] Neues Feld für Ausblenden der Copyright und Description hinzufügen
+- [x] Felder für Rows und Columns hinzufügen (TYPO3 Standard)
   - [ ] Backend Optimierung
-  - [ ] Auswertung im Frontend
+  - [ ] Frontend-Ausarbeitung mit 2 und 3 Spalten
+  - [ ] Testen mit mehreren Bildern
+  - [ ] Maximale Columns auf 3 begrenzen
 - [ ] Neue Ansicht "Kachelansicht" implementieren
