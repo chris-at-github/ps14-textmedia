@@ -15,5 +15,9 @@
     </f:else>
   </f:if>
 
+  <f:if condition="{content.imagewidth}">
+    <f:variable name="width" value="{content.imagewidth}" />
+  </f:if>
+
   <co:media.container media="{file}" width="{width}" priority="{renderingPriority}" ratio="{ratio}" description="{description}" copyright="{copyright}" />
 </html>

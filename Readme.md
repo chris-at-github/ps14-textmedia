@@ -17,8 +17,8 @@ Erweitert das Standard TYPO3 Image Modul um neue Ansichten und Funktionen.
   - [x] Auswertung im Frontend
 - [x] Neues Feld für Ausblenden der Copyright und Description hinzufügen
 - [x] Felder für Rows und Columns hinzufügen (TYPO3 Standard)
-  - [ ] Backend Optimierung
-  - [ ] Frontend-Ausarbeitung mit 2 und 3 Spalten
+  - [x] Backend Optimierung
+  - [x] Frontend-Ausarbeitung mit 2 und 3 Spalten
   - [ ] Testen mit mehreren Bildern
   - [ ] Maximale Columns auf 3 begrenzen
 - [ ] Neue Ansicht "Kachelansicht" implementieren
